@@ -3,12 +3,16 @@ package com.bellamyphan.microservice_school.model;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "schools")
 @Data // Lombok annotation to generate getters, setters, and other utility methods
+@Builder
+@AllArgsConstructor
 @NoArgsConstructor
 public class School {
 
